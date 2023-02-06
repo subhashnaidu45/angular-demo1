@@ -1,0 +1,17 @@
+/* ul{
+    display: flex;
+    flex-wrap:wrap;
+    width: auto;
+ }
+ ul > li{
+    list-style: none;
+    color: aqua;
+    width: 25%;
+    text-align: center;
+    cursor: pointer;
+    overflow:auto;
+    white-space: normal;
+  }
+  h2{
+    text-align: center;
+  } */

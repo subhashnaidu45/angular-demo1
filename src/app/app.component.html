@@ -1,0 +1,34 @@
+<!-- <button class="btn-primary">submit</button> -->
+<!-- <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button class="navbar-brand" href="#">Book Store</button>
+      </div>
+      <ul class="nav navbar-nav navbar-right">
+        <li><button>My Cart</button></li>
+      </ul>
+    </div>
+  </nav>
+
+<app-books></app-books>
+<app-cart></app-cart> -->
+
+
+<nav class="flex justify-between p-4 bg-sky-900 text-white">
+  <div>
+     <a routerLink="/">Book Store</a>
+  </div>
+  <div>
+    <a class="mx-4" routerLink="/cart">My Cart</a>
+    <a class="mx-4" routerLink="/login">Login</a> 
+    <a class="mx-4" routerLink="/register">Register</a>
+  </div>
+</nav>
+
+  <!-- <app-books></app-books>
+  <app-cart></app-cart> -->
+  <div class="p-4">
+<router-outlet></router-outlet>
+</div>
+
+  
