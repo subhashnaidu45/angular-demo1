@@ -15,17 +15,19 @@ form: LoginForm = {
   password: '',
 };
 
-isLoading: boolean = false;
+
 
 constructor(private authService: AuthService){}
 
 submit(){
-  if(this.isLoading) return;
-  this.isLoading = true;
-  this.authService.login()
+  
+  this.authService.login(this.form);
   
   
   
+}
+isLoading(){
+  return this.authService.isLoading;
 }
 
   

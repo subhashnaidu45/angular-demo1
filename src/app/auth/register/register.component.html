@@ -33,9 +33,15 @@
             Confirm Password field must be valid
         </div>
         <div class="my-4 w-full">
-            <input type="submit" 
-            [disabled]="myForm.form.invalid"
-            class="p-2 w-full bg-cyan-600 text-white hover:bg-cyan-900 rounded ">
+            <button type="submit"  [disabled]="myForm.form.invalid"
+            class="p-2 w-full bg-sky-700 text-white hover:bg-sky-900 rounded">
+            <ng-container *ngIf="isLoading()">
+                Loading.....
+            </ng-container>
+            <ng-container *ngIf="!isLoading()">
+                Submit
+            </ng-container>
+        </button>
         </div>
     </form>
     </div>
